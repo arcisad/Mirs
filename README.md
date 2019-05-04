@@ -46,7 +46,7 @@ get_center
 
 Returns the center of the scan. Converts images ijk coordinates (pixel coordinates) to the native scanner coordinates via affine transformation. We read the patient position for the middle slice of the stack and carry out the affine transformation according to the following formula:
 
-###Affine transformation
+## Affine transformation
 
 we have:
 
@@ -65,7 +65,7 @@ The class **mask_object** generates segments the metal objects per slice and wri
 
 CT images of the test are stores with Hounsfield units as intensities. Metal objects have much greater intensities than tissue and bone. Therefore, A simple thresholding followed by a morphology opening filter could generate acceptable result. Morphology opening is simply an erosion followed by dilation aiming for removing white spots outside of the segmented area. 
 
-[Morphological opening](https://scikit-image.org/docs/dev/api/skimage.morphology.html#skimage.morphology.opening)
+Link to the page: [Morphological opening](https://scikit-image.org/docs/dev/api/skimage.morphology.html#skimage.morphology.opening)
 
 
 # U-Net DNN segmentation
