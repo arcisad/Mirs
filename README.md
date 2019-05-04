@@ -61,7 +61,7 @@ In matrix form for a single slice CT scanner:
 Where Ori is the patient orientation, Pos is the patient position in the slice, Ps is the pixel spacing. 
 
 
-The class **mask_object** generates segments the metal objects per slice and writes the corresponding binary mask files in the masks folder. 
+The class **mask_object** segments the metal objects per slice and writes the corresponding binary mask files in the masks folder. 
 
 CT images of the test are stores with Hounsfield units as intensities. Metal objects have much greater intensities than tissue and bone. Therefore, A simple thresholding followed by a morphology opening filter could generate acceptable result. Morphology opening is simply an erosion followed by dilation aiming for removing white spots outside of the segmented area. 
 
@@ -70,7 +70,7 @@ Link to the page: [Morphological opening](https://scikit-image.org/docs/dev/api/
 
 # U-Net DNN segmentation
 
-The **unet_object** class is a Keras based U-net image segmentation method. [U-Net](https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/) developed at the University of Freiburg is a deep convolutional neural network architecture, especifically designed for medical image segmentation. I uses a encoder-decoder approach through a symmetrical pathway in which layers of the encoder are copied to the corresponding layers of the decoder. Downsampling the images to features and then upsampling them to the masks are normally used in segmentation DNNs such as Mask-RCNN or U-Net. 
+The **unet_object** class is a Keras based U-net image segmentation method. [U-Net](https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/) developed at the University of Freiburg is a deep convolutional neural network architecture, especifically designed for medical image segmentation. It uses a encoder-decoder approach through a symmetrical pathway in which layers of the encoder are copied to the corresponding layers of the decoder. Downsampling the images to features and then upsampling them to the masks are normally used in segmentation DNNs such as Mask-RCNN or U-Net. 
 
 A schematic view of U-net Architecture is seen below:
 
