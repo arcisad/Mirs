@@ -1,1 +1,1 @@
-# CT metal object detection using Keras based U-net 
+# CT metal object detection 
