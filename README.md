@@ -104,7 +104,7 @@ is the class constructor. Takes the following arguments:
 - width: width of the image (default = 512)
 - dim: image depth (dimensions), (default = 1 for a binary image)
 
-## Assuming that the images should be fed to the network as is, I haven't done ant preprocessing. The only processing was removing -2048 intensity values fro the image. Contrast stretchig, cropping plus other image processing techniques coud improve the results.
+## Assuming that an image should be fed to the network as is, I haven't done ant preprocessing. The only processing was removing -2048 intensity values fro the image. Contrast stretchig, cropping plus other image processing techniques coud improve the results.
 
 The optimizer used is **Adam** optimizer and the loss function is a **weighted binary class entropy** function to handle the large class imbalance existing in the images. Dice loss function is a good option as well but should be used with class weights.
 
