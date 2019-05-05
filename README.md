@@ -9,6 +9,13 @@ You could find the lik to the challenge here:
 
 [Medical Research Scientist Test](https://docs.google.com/document/d/1GwRRxhlzXWkB2XCnjOxApOcdWwkoPlZ4AJUzReO2E00/edit?usp=sharing)
 
+## Table of contents:
+- [Getting image information](#getting-image-information)
+- [Segmenting metal objects](#segmenting-metal-objects)
+- [U-Net image segmentation](#u-net-dnn-segmentation)
+
+# Getting image information
+
 Every DICOM scan image has a meta data built inside it, containing useful information about the image. Pixel spacing, slice thickness, patient position and orientation are the ones extracted for this section.
 
 The class **dicom_object** generates the outputs for mean, max and centre of the scan. 
@@ -60,6 +67,7 @@ In matrix form for a single slice CT scanner:
 
 Where Ori is the patient orientation, Pos is the patient position in the slice, Ps is the pixel spacing. 
 
+# Segmenting metal objects
 
 The class **mask_object** segments the metal objects per slice and writes the corresponding binary mask files in the masks folder. 
 
