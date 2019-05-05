@@ -3,7 +3,7 @@ This repository contains the works for medical research scientist test!
 
 ## If the notebook failed to load in GitHub please try this:
 
-[Test Notebook](https://nbviewer.jupyter.org/github/arcisad/Mirs/blob/master/mirs.ipynb?flush_cache=true)
+[Test Notebook](https://nbviewer.jupyter.org/github/arcisad/Mirs/blob/master/mirs.ipynb?flush_cache=true?flush_cache=true)
 
 You could find the lik to the challenge here:
 
