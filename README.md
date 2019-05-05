@@ -1,7 +1,7 @@
 # CT metal object detection 
 This repository contains the works for medical research scientist test!
 
-## If the notebook failed to pen in GitHub please try this:
+## If the notebook failed to load in GitHub please try this:
 
 [Test Notebook](https://nbviewer.jupyter.org/github/arcisad/Mirs/blob/master/mirs.ipynb)
 
